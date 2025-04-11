@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# 今日の日付
+TODAY=$(date +"%Y-%m-%d")
+
+# 保存先
+TARGET_DIR=~/daily-commit-log
+FILE="$TARGET_DIR/$TODAY.md"
+
+# テンプレート作成
+if [ ! -f "$FILE" ]; then
+  cat <<EOF > "$FILE"
+# $TODAY の学び
+
+## 🧠 今日覚えたこと
+
+## 💡 気づき・疑問
+
+## ✨ 一言ふりかえり
+EOF
+fi
