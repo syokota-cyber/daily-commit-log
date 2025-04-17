@@ -1,1 +1,7 @@
 hello
+another change
+（または hello と another change を並べたいなら）hello
+<<<<<<< HEAD
+=======
+another change
+>>>>>>> reset-test
