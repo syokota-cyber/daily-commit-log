@@ -1,0 +1,20 @@
+name: CI Check
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+
+jobs:
+  markdown-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: ✅ Check for Markdown files
+        run: |
+          echo "Checking for markdown files..."
+          find . -name "*.md"
