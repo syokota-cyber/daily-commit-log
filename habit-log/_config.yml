@@ -1,0 +1,4 @@
+title: "学習ログ"
+description: "毎日のGit/GitHub学習記録"
+theme: minima
+baseurl: "/daily-commit-log" # あなたのリポジトリ名
