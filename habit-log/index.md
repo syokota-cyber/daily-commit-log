@@ -7,9 +7,15 @@ excerpt: "毎日のGit/GitHub学習記録"
 # 最新の投稿
 
 {% for post in site.posts limit:5 %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
-  <p>{{ post.excerpt }}</p>
+  <article class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%Y年%m月%d日" }}
+    </time>
+    <div class="post-content">
+      {{ post.content | strip_html | truncatewords: 50 }}
+    </div>
+  </article>
 {% endfor %}
 
 # 🌈 表示チェック用ページ

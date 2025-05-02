@@ -21,6 +21,10 @@ kramdown:
 locale: "ja-JP"
 timezone: "Asia/Tokyo"
 
+# 日付設定
+date_format: "%Y年%m月%d日"
+time_format: "%H:%M"
+
 # 投稿設定
 defaults:
   -
