@@ -1,10 +1,10 @@
 title: "学習ログ"
 description: "毎日のGit/GitHub学習記録"
-baseurl: "/habit-log"
+baseurl: "/daily-commit-log"
+url: "https://syokota-cyber.github.io"
 
 # テーマ設定
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-minimal_mistakes_skin: "default"
+theme: minima
 
 # プラグイン設定
 plugins:
@@ -23,19 +23,6 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-remote-theme
 
-# デフォルト設定
-defaults:
-  scope:
-    path: ""
-    type: "posts"
-  values:
-    layout: "single"
-    author_profile: true
-    read_time: true
-    comments: false
-    share: true
-    related: true
-
 # ビルド設定
 exclude:
   - Gemfile
@@ -45,9 +32,35 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - markdown: kramdown
+  - kramdown:
+      input: GFM
+      hard_wrap: false
 
 # サイト設定
 locale: "ja-JP"
 timezone: "Asia/Tokyo"
 paginate: 5
 paginate_path: "/page:num/"
+
+# 投稿設定
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+# 投稿の並び順
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+    sort_by: date
+    reverse: true
