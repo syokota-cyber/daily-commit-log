@@ -1,0 +1,41 @@
+title: "学習ログ"
+description: "毎日のGit/GitHub学習記録"
+baseurl: "/daily-commit-log"
+url: "https://syokota-cyber.github.io"
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+locale: "ja-JP"
+timezone: "Asia/Tokyo"
+
+date_format: "%Y年%m月%d日"
+time_format: "%H:%M"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+    sort_by: date
+    reverse: true 
