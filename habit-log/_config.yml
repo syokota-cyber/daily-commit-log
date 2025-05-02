@@ -1,7 +1,12 @@
 title: "学習ログ"
 description: "毎日のGit/GitHub学習記録"
-theme: mmistakes/minimal-mistakes
 baseurl: "/habit-log"
+
+# テーマ設定
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default"
+
+# プラグイン設定
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -18,4 +23,15 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-remote-theme
 
-remote_theme: mmistakes/minimal-mistakes
+# デフォルト設定
+defaults:
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "single"
+    author_profile: true
+    read_time: true
+    comments: false
+    share: true
+    related: true
