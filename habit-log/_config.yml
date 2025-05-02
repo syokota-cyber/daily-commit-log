@@ -1,0 +1,7 @@
+title: "学習ログ"
+description: "毎日のGit/GitHub学習記録"
+theme: minima
+baseurl: "/habit-log" # リポジトリ名を修正
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
