@@ -4,7 +4,7 @@ baseurl: "/daily-commit-log"
 url: "https://syokota-cyber.github.io"
 
 # テーマ設定
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # プラグイン設定
 plugins:
