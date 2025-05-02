@@ -3,7 +3,7 @@ description: "毎日のGit/GitHub学習記録"
 baseurl: "/daily-commit-log"
 url: "https://syokota-cyber.github.io"
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 
 plugins:
   - jekyll-feed
