@@ -23,10 +23,15 @@ jobs:
         with:
           source: ./
           destination: ./_site
-          jekyll_build_flags: "--verbose"
+          jekyll_build_flags: "--verbose --trace"
+          enable_jekyll_minifier: true
 
       - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: _site
 
   markdown-check:
     runs-on: ubuntu-latest

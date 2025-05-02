@@ -3,7 +3,7 @@ description: "毎日のGit/GitHub学習記録"
 baseurl: "/habit-log"
 
 # テーマ設定
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: "default"
 
 # プラグイン設定
@@ -35,3 +35,13 @@ defaults:
     comments: false
     share: true
     related: true
+
+# ビルド設定
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
