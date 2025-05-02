@@ -46,3 +46,22 @@ collections:
     permalink: /:year/:month/:day/:title/
     sort_by: date
     reverse: true
+
+# カテゴリー設定
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# ナビゲーション
+navigation:
+  - title: "ホーム"
+    url: /
+  - title: "アーカイブ"
+    url: /year-archive/
+  - title: "カテゴリー"
+    url: /categories/
+  - title: "タグ"
+    url: /tags/
