@@ -45,3 +45,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# サイト設定
+locale: "ja-JP"
+timezone: "Asia/Tokyo"
+paginate: 5
+paginate_path: "/page:num/"

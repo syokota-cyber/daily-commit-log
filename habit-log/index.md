@@ -1,6 +1,11 @@
 ---
 layout: home
-title: "これはテスト用トップページです🚀"
+author_profile: true
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "毎日のGit/GitHub学習記録"
 ---
 
 # 🌈 表示チェック用ページ
@@ -30,3 +35,9 @@ title: "これはテスト用トップページです🚀"
 🕵️‍♀️ このテキストが出ていれば GitHub Pages が正しく再ビルドされています。
 
 ---
+
+<div class="grid__wrapper">
+  {% for post in site.posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
