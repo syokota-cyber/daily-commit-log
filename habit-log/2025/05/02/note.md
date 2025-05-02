@@ -74,3 +74,16 @@ title: "Day XX タイトル"
 date: YYYY-MM-DD
 author_profile: true
 --- 
+```
+
+# 2025年5月2日のログ
+
+## 今日の作業
+- GitHub Pagesの設定を無効化
+- Jekyll関連ファイルの削除
+- シンプルなMarkdown形式でのログ記録に移行
+
+## 学んだこと
+- GitHub Pagesの設定変更方法
+- ワークフローファイルの作成方法
+- リポジトリの整理方法
