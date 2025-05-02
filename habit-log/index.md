@@ -23,19 +23,6 @@ excerpt: "毎日のGit/GitHub学習記録"
 - [x] Markdown が HTML に変換されている
 - [x] GitHub Pages が再ビルドされている
 
----
-
----
-layout: home
-title: "これはテスト用トップページです🚀"
----
-
-# 🌈 表示チェック用ページ
-
-🕵️‍♀️ このテキストが出ていれば GitHub Pages が正しく再ビルドされています。
-
----
-
 <div class="grid__wrapper">
   {% for post in site.posts %}
     {% include archive-single.html type="grid" %}
