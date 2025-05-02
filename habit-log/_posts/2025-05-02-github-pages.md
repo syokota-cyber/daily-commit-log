@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitHub PagesとJekyllの理解"
+title: "GitHub Pagesで公開"
 date: 2025-05-01
 ---
 
