@@ -1,4 +1,4 @@
 ---
 layout: home
-title: ""
+title: "学習ログポータル"
 ---
