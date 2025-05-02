@@ -10,38 +10,16 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-include-cache
-  - jekyll-coffeescript
-  - jekyll-commonmark-ghpages
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
-  - jekyll-remote-theme
 
 # ビルド設定
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - markdown: kramdown
-  - kramdown:
-      input: GFM
-      hard_wrap: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 # サイト設定
 locale: "ja-JP"
 timezone: "Asia/Tokyo"
-paginate: 5
-paginate_path: "/page:num/"
 
 # 投稿設定
 defaults:

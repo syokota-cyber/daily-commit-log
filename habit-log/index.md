@@ -1,12 +1,16 @@
 ---
 layout: home
-author_profile: true
-header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
-  overlay_filter: 0.5
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+title: "学習ログ"
 excerpt: "毎日のGit/GitHub学習記録"
 ---
+
+# 最新の投稿
+
+{% for post in site.posts limit:5 %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
+  <p>{{ post.excerpt }}</p>
+{% endfor %}
 
 # 🌈 表示チェック用ページ
 
