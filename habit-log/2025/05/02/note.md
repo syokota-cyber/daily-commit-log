@@ -11,4 +11,81 @@
 ## 明日の目標
 - [ ] 朝の散歩（30分）
 - [ ] 読書（30分）
-- [ ] プログラミング（新機能の実装） 
+- [ ] プログラミング（新機能の実装）
+
+---
+layout: single
+title: "Day 26 Minimal Mistakes 導入とGitHub Pages復旧"
+date: 2025-05-02
+author_profile: true
+---
+
+## 📅 今日の概要
+
+GitHub Pagesの表示不具合と長期間にわたるビルド失敗を解消し、  
+**Minimal Mistakes テーマを導入したうえで、再構築・復旧**しました。
+
+---
+
+## 🧨 問題発生の流れ（時系列）
+
+### ✅ 4月28日以降の投稿が表示されない
+
+- 投稿ファイル（例：`2025-04-28.md`）に **YAML Front Matter が不完全**
+- → `---` のみで必要な `layout`, `title`, `date` が欠落
+- → Jekyllビルドが強制失敗（GitHub Actionsでエラー）
+
+---
+
+### ❌ GitHub Actionsが連続失敗
+
+- 20件以上 `pages build and deployment` が全失敗
+- エラー：`Invalid YAML front matter` による停止
+- 結果：GitHub Pages 表示も完全停止
+
+---
+
+### 🔁 GitHub Pagesのリセットと再起動
+
+- 一度 `Pages > Branch: None` にして公開解除
+- `main / (root)` で再指定 → 空ページに戻る
+
+---
+
+### 🎯 Minimal Mistakes導入と構成整理
+
+- `_config.yml` をテーマ用に再構成（remote_theme指定）
+- `index.md` を `_pages/index.md` に移動し `layout: home` へ
+- 不要ファイル（`index.md`, 壊れた投稿）を削除
+- 正しい投稿（`2025-05-02-minimal-mistakes-restore.md`）で構成修正確認
+
+---
+
+## 🛠 学んだポイント
+
+- Jekyllでは**ファイル名の形式とYAMLフロントマターが命**
+- 一つでも壊れていると**全体ビルドが落ちる**
+- GitHub Pagesの表示不具合の原因は、**「壊れた投稿」1つで起こる**
+
+---
+
+## ✅ 復旧後の状態
+
+- Minimal Mistakes テーマ導入成功 ✅
+- 投稿は `Day 26` から再開 ✅
+- 表示URL: [https://syokota-cyber.github.io/daily-commit-log/](https://syokota-cyber.github.io/daily-commit-log/)
+
+---
+
+## 🔄 明日以降のルール（再確認）
+
+- 投稿ファイル名は `YYYY-MM-DD-title.md`
+- フロントマターは以下を毎回書く：
+
+```markdown
+---
+layout: single
+title: "Day XX タイトル"
+date: YYYY-MM-DD
+author_profile: true
+--- 
