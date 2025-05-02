@@ -1,7 +1,21 @@
 title: "学習ログ"
 description: "毎日のGit/GitHub学習記録"
-theme: minima
-baseurl: "/habit-log" # リポジトリ名を修正
+theme: mmistakes/minimal-mistakes
+baseurl: "/habit-log"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-remote-theme
+
+remote_theme: mmistakes/minimal-mistakes
