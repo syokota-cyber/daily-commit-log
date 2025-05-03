@@ -1,4 +1,3 @@
-# .github/workflows/auto-format.yml
 name: Format Markdown
 
 on:
