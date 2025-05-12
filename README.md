@@ -1,3 +1,5 @@
+ “This is the MAIN branch version.”
+
 # 🌱 Daily Commit Log
 
 このリポジトリは、Git/GitHubの習慣化＆学習ログを記録するためのものです。
