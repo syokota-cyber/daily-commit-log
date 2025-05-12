@@ -22,3 +22,8 @@
 
 - 名前（ハンドルでもOK）
 - GitHubプロフィールURL
+
+# README.md
+<!-- たとえば文言を修正する -->
+Before: "Ths is a sample project."
+After:  "This is a sample project."
