@@ -27,3 +27,5 @@
 <!-- たとえば文言を修正する -->
 Before: "Ths is a sample project."
 After:  "This is a sample project."
+<!-- README.md の末尾にでもOK -->
+This line was added for Issue #23.
