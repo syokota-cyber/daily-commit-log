@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "21a3251402308cd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7351a350cb6e6623",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fbeebb0115f31a35",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "gitコマンド整理.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "gitコマンド整理"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c98376f797153eb1",
+    "type": "split",
+    "children": [
+      {
+        "id": "65221f78adb86b84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "512179363ae9f623",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "a1a230016cfcdbf4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "23fc16ec705e07ac",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "19e21c414db6e3d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c12b65491eb2a57a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86041136c58c94d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "バックリンク"
+            }
+          },
+          {
+            "id": "98141226dd4d74b5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "アウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "f031e1153e18d11e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "89608ec497a7a05e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "アウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false
+    }
+  },
+  "active": "512179363ae9f623",
+  "lastOpenFiles": [
+    "habit-log/2505-05-17.md",
+    "git学習スケジュール.canvas",
+    "gitコマンド整理.canvas",
+    "archive/2025-04-15.md",
+    "git活用展開.canvas",
+    "archive/2025-05-04.md",
+    "archive/2025-05-05.md",
+    "archive/2025-05-02.md",
+    "archive/2025-05-01.md",
+    "archive/2025-05-01-github-pages-renamed.md",
+    "archive/2025-05-01-github-pages.md",
+    "archive/2025-04-28.md",
+    "archive/2025-04-27.md",
+    "archive/2025-04-20.md",
+    "archive/2025-04-17.md",
+    "archive/2025-04-14.md",
+    "archive/2024-04-20.md"
+  ]
+}
