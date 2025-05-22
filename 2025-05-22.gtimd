@@ -1,0 +1,59 @@
+---
+tags: [git, 学習ログ]
+created: 2025-05-22
+---
+
+# Day22: Vault分割と自動ログ生成の環境整備
+
+## 🎯 今日の目標
+- Obsidian Vault構成の整備（Vaultは統一・Gitは分割）
+- git-training-v3 ディレクトリのGitHub統合
+- `.gtimd` テンプレートによる学習ログ自動生成の仕組みを整える
+- pushタイミングは手動で行えるよう調整する
+
+## ✅ 実施内容
+- 作業ブランチ: `day22-setup`
+- 実行コマンド一覧:
+```bash
+# git-training-v3 フォルダ作成＆GitHubに接続
+cd ~/obsidian-vault/git-training-v3
+git init
+git remote add origin https://github.com/syokota-cyber/daily-commit-log.git
+git pull origin main --allow-unrelated-histories
+# コンフリクト解消後
+git add .
+git commit -m "resolve merge conflicts"
+git push -u origin main
+
+# テンプレート生成
+mkdir templates
+touch templates/daily-git-log.md
+
+# スクリプト作成＆実行
+nano ~/scripts/generate-git-log.sh
+chmod +x ~/scripts/generate-git-log.sh
+bash ~/scripts/generate-git-log.sh
+```
+
+## ❗ 詰まったところ・調べたこと
+- `git pull` で「divergent branches」エラー対応 → `--allow-unrelated-histories`
+- Obsidian Git プラグインとの違い
+- Templater に `.gtimd` を使う方法とその認識条件
+
+## 🔁 次回やること
+- AWS/GCP用のテンプレート分離
+- `launchd` による自動実行（任意）
+- `Dataview` によるログ一覧の自動可視化
+
+---
+
+## 🚀 編集完了後に push を忘れずに
+
+以下のコマンドをターミナルで実行：
+
+```bash
+cd ~/obsidian-vault/git-training-v3
+git push origin main
+```
+
+[[2025-05-21.gtimd]]
