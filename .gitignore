@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Directories
+Projects/
+git-practice/
+
+# Keep all markdown files
+!*.md

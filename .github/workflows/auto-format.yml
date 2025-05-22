@@ -1,0 +1,14 @@
+name: Auto Format
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+  workflow_dispatch:
+
+jobs:
+  auto-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show formatting message
+        run: echo "Pretend we're formatting Markdown here."
