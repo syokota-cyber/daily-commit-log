@@ -137,3 +137,9 @@ https://github.com/syokota-cyber/daily-commit-log
 ---
 
 > ※このテンプレートは毎日の作業開始時に参照・コピーして使ってください。 
+
+# その他コマンド例
+
+```bash
+git pull origin main --allow-unrelated-histories
+``` 
