@@ -143,3 +143,7 @@ https://github.com/syokota-cyber/daily-commit-log
 ```bash
 git pull origin main --allow-unrelated-histories
 ``` 
+
+git merge --abort 
+
+git branch -D day2-basics-commands 
