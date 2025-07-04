@@ -1,0 +1,3 @@
+# 基本復習
+- git stuts で状態確認
+ - git branch でブランチ確認
