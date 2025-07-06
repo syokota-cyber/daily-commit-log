@@ -1,4 +1,6 @@
-# 通知システムテスト
+// 通知システムテスト
+// このファイルはNotificationServiceクラスの動作を検証するためのテストファイルです
+// Jestフレームワークを使用してユニットテストを実行します
 
 const NotificationService = require('./notification-service.js');
 
